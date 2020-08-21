@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Floaters-w1</title>
+    <!-- Bootswatch -->
+    <link rel="stylesheet" href="https://bootswatch.com/4/cosmo/bootstrap.min.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <!-- Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/scripts.bcf3243b.css"></head>
+  <body class="bg-dark">
+
+    <!-- Loading btn -->
+    <button id="loadingGif" class="btn btn-lg btn-secondary mx-auto mt-n5 rounded-pill">
+      <span class="display-4">. . . LOADING . . .</span>
+    </button>
+
+    <!-- Navbar -->
+    <nav class="d-flex pt-2 pb-2 justify-content-between border-bottom border-warning">
+      <!-- Brand -->
+      <div class="d-inline-flex my-0 align-items-end w-25">
+        <!-- Dropdown -->
+        <div class="dropdown">
+          <!-- Trigger -->
+          <button id="navdropdown" class="btn btn-outline-warning border-0 text240 dropdown-toggle p-0 px-3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <h2 class="d-inline-block mb-0 text120">
+              Floaters
+            </h2>
+          </button>
+          <!-- Content -->
+          <div id="navDropdownMenu" class="dropdown-menu text160" aria-labelledby="navdropdown">
+            <a class="dropdown-item" href="#">
+              Preferences - To be developed
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Center tag -->
+      <div class="d-inline-flex w-100 justify-content-center align-items-end">
+        <p class="headerTag my-0 p-0 text240 text-center smallCaps spaceWide text-light">
+          Create a Collage of Floating Images
+        </p>
+      </div>
+
+      <!-- Help btn -->
+      <div id="offscreenA11yControls" class="d-inline-flex pr-3 align-items-end justify-content-end w-25">
+        <button id="helpBtn" class="btn btn-outline-warning text240 border-0" data-toggle="modal" data-target="#helpModal">
+          <h5 class="mb-0 font-weight-bold text120">
+            ?
+          </h5>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Loading Dock -->
+    <div id="loadingDock_wrapper" class="loadingDock_init">
+      <!-- 'Select images' <label> & <input> -->
+      <div id="loadingDock_selectWrapper" class="mx-auto pb-0">
+        <label for="selectImagesBtn" class="btn btn-lg btn-primary rounded">
+          <div class="display-4">
+            Select images
+          </div>
+        </label>
+
+        <input id="selectImagesBtn" type="file" accept=".jpg, .jpeg, .png" multiple="">
+      </div>
+
+      <!-- Create Collage btn -->
+      <button id="createCollageBtn" class="mx-auto btn btn-lg btn-success rounded">
+        <div class="display-4">
+          Create Collage
+        </div>
+      </button>
+    </div>
+
+    <!-- Fullscreen - (includes 'help modal') -->
+    <div id="fullscreen" class="bg-black">
+
+      <!-- Help modal -->
+      <div id="helpModal" class="modal fade" tabindex="-1" role="dialog"></div>
+
+      <!-- Dispaly order btn -->
+      <button id="displayOrderBtn" type="button" class="btn btn-lg btn-warning">
+        Display order &nbsp; <span class="badge badge-light">_</span>
+      </button>
+
+      <!-- Collage wrapper-->
+      <div id="collageWrapper"></div>
+    </div>
+
+    <!-- Offscreen -->
+    <div id="offscreenImgLoader"></div>
+
+    <script src="/scripts.bcf3243b.js"></script>
+  </body>
+</html>

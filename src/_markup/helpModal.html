@@ -1,0 +1,163 @@
+<!-- Content wrapper -->
+<div 
+  class="modal-dialog modal-xl"
+>
+  <!-- Content -->
+  <div 
+    class="modal-content bg-white border"
+  >
+    <!-- Heading -->
+    <div 
+      class="d-flex pt-2 pb-3 bg-white justify-content-between border-bottom"
+    >
+      <!-- Title -->
+      <div class="d-inline-flex ml-3 align-items-end">
+        <p class="headerTag my-0 p-0 smallCaps">
+          Floaters - Help
+        </p>
+      </div>
+
+      <!-- Close btn -->
+      <div class="d-inline-flex pr-3 align-items-center">
+        <button
+          type="button"
+          class="btn btn-outline-dark text120 border-0 font-weight-bold"
+          data-dismiss="modal"
+        >
+          X
+        </button>
+      </div>
+    </div>
+    <!-- Body -->
+    <div 
+      class="modal-body"
+    >
+      <!-- Tab triggers -->
+      <ul 
+        class="nav nav-tabs" role="tablist"
+      >
+        <!-- Quick Start trigger -->
+        <li 
+          class="nav-item" role="presentation"
+        >
+          <a
+            class="nav-link px-4 active text-dark"
+            id="quickstart_tab"
+            data-toggle="tab"
+            
+            href="#quickstart"
+            role="tab"
+            aria-controls="quickstart"
+            aria-selected="true"
+          >
+            Quick Start
+          </a>
+        </li>
+
+        <!-- How to edit trigger -->
+        <li 
+          class="nav-item" role="presentation"
+        >
+          <a
+            class="nav-link px-4 text-dark"
+            id="howtoedit_tab"
+            data-toggle="tab"
+            href="#howtoedit"
+            role="tab"
+            aria-controls="howtoedit"
+            aria-selected="false"
+          >
+            How to edit
+          </a>
+        </li>
+      </ul>
+
+      <!-- Tabs content -->
+      <div 
+        class="tab-content"
+      >
+        <!-- Quick Start content  -->
+        <div
+          id="quickstart"
+          class="tab-pane fade card card-body border-top-0 show active"
+          role="tabpanel"
+          aria-labelledby="quickstart_tab"
+        >
+          <!-- Get Help & Drag-n-Drop -->
+          <div class="d-flex w-100 mt-4 justify-content-between">
+            <div class="d-inline-block ml-3 fitContent">
+              <div class="fitContent justify-content-end">
+                <p class="mb-0 pb-0 text140 text-center">Help</p>
+                <p class="pt-0 px-4 text-center">H key</p>
+              </div>
+            </div>
+            <div class="d-inline-block px-5 fitContent">
+              <div class="fitContent">
+                <p class="mb-0 pb-0 text140 text-center">Drag</p>
+                <p class="pt-0 px-4 text-center">ctrl+ Click</p>
+              </div>
+            </div>
+            <div class="d-inline-block mr-3 fitContent">
+              <div class="fitContent">
+                <p class="mb-0 pb-0 text140 text-center">Edit</p>
+                <p class="pt-0 px-4 text-center">shift+ Click</p>
+              </div>
+            </div>
+          </div>
+          <!-- Start/Stop floating (headking) -->
+          <div 
+            class=" mx-auto mt-5 mb-3 text140 smallCaps text-center" 
+            style="width:90%; border-bottom:3px solid black;"
+          >
+            Start/stop floating for
+          </div>
+          <!-- Start/Stop floating (hotkeys) -->
+          <div class="d-flex w-100 justify-content-center">
+            <div class="d-inline-block mr-5 fitContent">
+              <div class="fitContent justify-content-end">
+                <p class="mb-0 pb-0 text140 text-center">all images</p>
+                <p class="pt-0 text-center">spacebar</p>
+              </div>
+            </div>
+            <div class="d-inline-block ml-5 fitContent">
+              <div class="fitContent justify-content-end">
+                <p class="mb-0 pb-0 text140 text-center">1 image</p>
+                <p class="pt-0 px-4 text-center">Click image</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- How to edit content -->
+        <div
+          id="howtoedit"
+          class="tab-pane fade card card-body pb-0 border-top-0"
+          role="tabpanel"
+          aria-labelledby="howtoedit_tab"
+        >
+          <!-- Editing steps -->
+          <div class="mx-auto mt-3" style="width:fit-content;">
+            <p>1. shift+ Click the image to edit it.</p>
+            <p>2. Press a key & use mousewheel&hellip;</p>
+          </div>
+          <!-- Size & Fade -->
+          <div class="d-flex w-50 mt-5 mx-auto justify-content-between">
+            <div class="d-inlne-flex">
+              <p class="mb-0 pb-0 text140 text-center">Size</p>
+              <p class="pt-0 px-4 text-center">'S' key</p>
+            </div>
+            <div class="d-inlne-flex">
+              <p class="mb-0 pb-0 text140 text-center">Fade</p>
+              <p class="pt-0 px-4 text-center">'F' key</p>
+            </div>
+          </div>
+          <!-- Display order -->
+          <div class="w-50 mt-4 mx-auto text-center">
+            <p class="text140 mb-0 pb-0">Display order</p>
+            <p class="pt-0">'D' key</p>
+          </div>
+        </div><!--/ How to edit content -->
+      </div><!--/ Tabs content -->
+    </div><!--/ Body -->
+  </div><!--/ Content -->
+</div><!--/ Content wrapper -->
